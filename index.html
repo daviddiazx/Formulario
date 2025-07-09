@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<h1 style="color: darkred;">¡Formulario para entrar al team jinetes de dragones!</h1>
+
+
+<body>
+    <form action="documents" method="POST">
+        <label for="name and last name">Nombre:</label>
+        <input type="text" id="name" required>
+        <br><br>
+
+        <label for="last_name">Apellido:</label>
+        <input type="email" id="email" required>
+        <br><br>
+
+        <label for="gender">Genero</label>
+        <br>
+        <input type="radio" value="male"> Masculino
+        <input type="radio" value="female"> Femenino
+        <br><br>
+        <label>Edad: </label>
+        <input type="checkbox" value="20-39"> 15-25
+        <input type="checkbox" value="40-59"> 26-36
+        <input type="checkbox" value="60-79"> 36-73
+        <br><br>
+
+        <label for="selection">Selecciona como te sientes al estar enfrente de un dragón:</label>
+        <select id="selection" name="seleccion">
+            <option value="sc">Siento que me va a comer</option>
+            <option value="sp">Siento un poco de miedo</option>
+            <option value="no">Normal</option>
+            <option value="sm">Siento que es como mi compañero</option>
+            <option value="sg">Siento una gran emocion de ser su compañero</option>
+        </select>
+        <br><br>
+
+        <label for="dragon selection">selecciona a compañero que te acompañara en tus aventuras:</label>
+        <br>
+        <select name="selection d" id="selection dragon">
+            <option value="ps">Pesadilla Monstruosa</option>
+            <option value="ec">Espantosus Cremallerus</option>
+            <option value="mn">Mortífero Nadder</option>
+            <option value="Gr">Gronckle</option>
+        </select>
+        <br><br>
+
+        <label for="section">Secciön al que deseas pertenecer:</label>
+        <br>
+        <select name="section" id="section">
+            <option value="ex">Explorador</option>
+            <option value="ca">Cazador</option>
+            <option value="pr">protector</option>
+
+        </select>
+        <br><br>
+
+        <label for="explication">Explicanos por que razón deseas unirte al team</label>
+        <br>
+        <textarea name="explication" id="explication" rows="5" cols="50" placeholder="Escribe tu explicacion aquí"></textarea>
+        <br><br>
+
+        <label for="conditions">Condiciones:</label>
+        <br>
+        <input type="checkbox" name="conditions1" id="conditions1">  Acepto cumplir con los requisitos del curso
+        <br>
+        <input type="checkbox" name="conditions2" id="conditions2"> No pondre en riesgo a sus compañeros durante los entrenos
+        <br>
+        <input type="checkbox" name="conditions3" id="conditions3"> Estoy conciente de que cualquier daño fisico sera responsablidad mia
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+
+
+</body>
+
+</html>
