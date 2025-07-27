@@ -5,81 +5,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+        rel="stylesheet">
 </head>
-<im id="imagen" src="https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/6637b33a-14f2-46d8-b683-ca61676c5c39/ef0bee32-48bd-11ef-bb0b-0afff21f57b1?host=wbd-images.prod-vod.h264.io&partner=beamcom" alt="">
+
+<img id="img-banner" src="https://toysmaniatic.com/Content/Images/uploaded/Personajes/COMO-ENTRENAR-DRAGON__Banner.jpg"
+    alt=""></img>
 <header>¡Formulario para entrar al team jinetes de dragones!</header>
+
 
 <body>
     <form action="documents" method="POST">
-        <label for="name and last name">Nombre:</label>
-        <input type="text" id="name" required>
+
+        <!--nombres y apellidos-->
+
+        <div id="name_and_lastname">
+            <label id="name1" for="name and last name">Nombre:</label>
+            <br>
+            <input id="nametext1" type="text" id="name2" required>
+            <br><br>
+
+
+            <label id="lastnametext" for="last_name">Apellido:</label>
+            <br>
+            <input type="last_name" id="last_name" required>
+        </div>
         <br><br>
 
-        <label for="last_name">Apellido:</label>
-        <input type="last_name" id="last_name" required>
-        <br><br>
+        <!--Genero y Edad-->
+        <div id="genero-edad">
+            <label id="gender" for="gender">Genero:</label>
+            <br>
+            <div id="genderx">
+                <input id="gener1" type="radio" value="male"> Masculino
+                <input id="gener2" type="radio" value="female"> Femenino
+            </div>
+            <br><br>
+            
+                <div id="Edades"></div>
+                <label id="Edad">Edad: </label>
+                <div id="Edades">
+                    <input id="20" type="checkbox" value="20-39"> 15-25
+                    <input id="40" type="checkbox" value="40-59"> 26-36
+                    <input id="60" type="checkbox" value="60-79"> 36-73
+                </div>
+            </div>
+            <br><br>
 
-        <label for="gender">Genero</label>
-        <br>
-        <input type="radio" value="male"> Masculino
-        <input type="radio" value="female"> Femenino
-        <br><br>
-        <label>Edad: </label>
-        <input type="checkbox" value="20-39"> 15-25
-        <input type="checkbox" value="40-59"> 26-36
-        <input type="checkbox" value="60-79"> 36-73
-        <br><br>
+            <!--Seleccio de sentimiento-->
 
-        <label for="selection">Selecciona como te sientes al estar enfrente de un dragón:</label>
-        <br>
-        <select id="selection" name="seleccion">
+            <div id="seleccion-sentimiento">
+                <label id="seleccion" for="selection">Selecciona como te sientes al estar enfrente de un dragón:</label>
+                <br>
+                <select id="selection" name="selection">
 
-            <option value="sc">Siento que me va a comer</option>
-            <option value="sp">Siento un poco de miedo</option>
-            <option value="no">Normal</option>
-            <option value="sm">Siento que es como mi compañero</option>
-            <option value="sg">Siento una gran emocion de ser su compañero</option>
-        </select>
-        <br><br>
+                    <option id="sc" value="sc">siento que me podrian comer</option>
+                    </option>
+                    <option id="sp" value="sp">Siento un poco de miedo</option>
+                    <option id="no" value="no">Normal</option>
+                    <option id="sm" value="sm">Siento que es como mi compañero</option>
+                    <option id="sg" value="sg">Siento una gran emocion de ser su compañero</option>
+                </select>
+            </div>
+            <br><br>
 
-        <label for="dragon selection">selecciona a compañero que te acompañara en tus aventuras:</label>
-        <br>
-        <select name="selection d" id="selection dragon">
-            <option value="ps">Pesadilla Monstruosa <img src="https://static.wikia.nocookie.net/howtotrainyourdragon/images/5/56/1481529221423.png/revision/latest?cb=20180309230815" alt=""></option>
-            <option value="ec">Espantosus Cremallerus</option>
-            <option value="mn">Mortífero Nadder</option>
-            <option value="Gr">Gronckle</option>
-        </select>
-        <br><br>
+            <!--seleccion de dragon-->
 
-        <label for="section">Secciön al que deseas pertenecer:</label>
-        <br>
-        <select name="section" id="section">
-            <option value="ex">Explorador</option>
-            <option value="ca">Cazador</option>
-            <option value="pr">protector</option>
+            <div id="seleccion-dragon">
+                <label id="seleccion-d" for="dragon selection">selecciona a compañero que te acompañara en tus
+                    aventuras:</label>
+                <br>
+                <select name="selection d" id="selection dragon">
+                    <option id="ps" value="ps">Pesadilla Monstruosa
+                    <option id="ec" value="ec">Espantosus Cremallerus</option>
+                    <option id="mn" value="mn">Mortífero Nadder</option>
+                    <option id="Gr" value="Gr">Gronckle</option>
+                </select>
+            </div>
+            <br><br>
 
-        </select>
-        <br><br>
 
-        <label for="explication">Explicanos por que razón deseas unirte al team</label>
-        <br>
-        <textarea name="explication" id="explication" rows="5" cols="50" placeholder="Escribe tu explicacion aquí"></textarea>
-        <br><br>
+            <!--explicacion-->
 
-        <label for="conditions">Condiciones:</label>
-        <br>
-        <input type="checkbox" name="conditions1" id="conditions1">  Acepto cumplir con los requisitos del curso
-        <br>
-        <input type="checkbox" name="conditions2" id="conditions2"> No pondre en riesgo a sus compañeros durante los entrenos
-        <br>
-        <input type="checkbox" name="conditions3" id="conditions3"> Estoy conciente de que cualquier daño fisico sera responsablidad mia
-        <br><br>
-        <input type="submit" value="Submit">
+            <div id="explicacion">
+                <label id="explicacon" for="explication">Explicanos por que razón deseas unirte al team</label>
+                <br>
+                <textarea name="explication" id="explication" rows="5" cols="50"
+                    placeholder="Escribe tu explicacion aquí"></textarea>
+            </div>
+            <br><br>
+
+            <!--condiciones-->
+
+            <div id="conditions">
+                <label id="codiciones-text" for="conditions">Condiciones:</label>
+                <br>
+                <input id="requisito1" type="checkbox" name="conditions1" id="conditions1"> Acepto cumplir con los
+                requisitos
+                del curso
+                <br>
+                <input id="codicion2" type="checkbox" name="conditions2" id="conditions2"> No pondre en riesgo a sus
+                compañeros
+                durante los
+                entrenos
+                <br>
+                <input id="condicion3" type="checkbox" name="conditions3" id="conditions3"> Estoy conciente de que
+                cualquier
+                daño fisico sera
+                responsablidad mia
+                <br><br>
+            </div>
+
+            <!--enviar-->
+
+
+            <input id="enviar" type="submit" value="Submit">
     </form>
 
+    <!--imagenes de fondo-->
 
+    <img src="" alt="">
 
 </body>
 
